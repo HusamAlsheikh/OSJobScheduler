@@ -1,0 +1,50 @@
+3: P0 Arrives - new process changes state to Ready3: P0 changes state from Ready to Running
+5: P0 CPU changes state from Running to Blocked
+5: P1 Arrives - new process changes state to Ready5: P1 changes state from Ready to Running
+5: P0 changes state from Ready to Blocked
+6: P2 Arrives - new process changes state to Ready8: P1 preempted - changes state from Running to Ready
+8: P2 changes state from Ready to Running
+10: P0 changes state from Blocked to Ready
+11: P2 preempted - changes state from Running to Ready
+11: P1 changes state from Ready to Running
+12: P1 change state from Running to Terminate
+12: P0 changes state from Ready to Running
+15: P0 preempted - changes state from Running to Ready
+15: P2 changes state from Ready to Running
+18: P2 preempted - changes state from Running to Ready
+18: P0 changes state from Ready to Running
+21: P0 preempted - changes state from Running to Ready
+21: P2 changes state from Ready to Running
+23: P2 CPU changes state from Running to Blocked
+23: P0 changes state from Ready to Running
+23: P2 changes state from Ready to Blocked
+25: P0 CPU changes state from Running to Blocked
+25: P2 changes state from Blocked to Ready
+25: P2 changes state from Ready to Running
+25: P0 changes state from Ready to Blocked
+28: P2 preempted - changes state from Running to Ready
+28: P2 changes state from Ready to Running
+31: P2 preempted - changes state from Running to Ready
+31: P2 changes state from Ready to Running
+32: P0 changes state from Blocked to Ready
+34: P2 preempted - changes state from Running to Ready
+34: P0 changes state from Ready to Running
+37: P0 preempted - changes state from Running to Ready
+37: P2 changes state from Ready to Running
+38: P2 CPU changes state from Running to Blocked
+38: P0 changes state from Ready to Running
+38: P2 changes state from Ready to Blocked
+39: P0 change state from Running to Terminate
+40: P2 changes state from Blocked to Ready
+40: P2 changes state from Ready to Running
+43: P2 preempted - changes state from Running to Ready
+43: P2 changes state from Ready to Running
+46: P2 preempted - changes state from Running to Ready
+46: P2 changes state from Ready to Running
+47: P2 CPU changes state from Running to Blocked
+47: P2 changes state from Ready to Blocked
+52: P2 changes state from Blocked to Ready
+52: P2 changes state from Ready to Running
+55: P2 preempted - changes state from Running to Ready
+55: P2 changes state from Ready to Running
+58: P2 change state from Running to Terminate

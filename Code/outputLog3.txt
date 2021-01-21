@@ -1,0 +1,255 @@
+1: No event
+2: No event
+3: start of 3: P0 Arrives - new process - enters readyQ - CPU burst of 2
+3:  start of 3:  CPU empty - move P0 from readyQ into CPU - CPU burst of 2
+4: start of 4: P1 Arrives - new process - enters readyQ - CPU burst of 4
+4: end of 4: 0 CPU burst complete - Moved into event list
+5: start of 5: P0 CPU burst complete - moved into IO Queue (Blocked) - IO Bursts of 5
+5:  start of 5:  CPU empty - move P1 from readyQ into CPU - CPU burst of 4
+5: P start of 5:  IO empty - move 0 from IO Queue into IO - IO burst of 5
+
+CPU: P1		IO: P0		ReadyQ: empty		IOQueue: empty
+
+6: start of 6: P2 Arrives - new process - enters readyQ - CPU burst of 2
+6: end of 6: 1 CPU burst complete - Moved into event list
+7: start of 7: P1 Preempted from CPU - moved into readyQ - CPU burst of 2
+7:  start of 7:  CPU empty - move P2 from readyQ into CPU - CPU burst of 2
+8: start of 8: P3 Arrives - new process - enters readyQ - CPU burst of 8
+8: end of 8: 2 CPU burst complete - Moved into event list
+9: start of 9: P2 CPU burst complete - moved into IO Queue (Blocked) - IO Bursts of 5
+9:  start of 9:  CPU empty - move P1 from readyQ into CPU - CPU burst of 2
+9: end of 9: 0 IO burst complete - Moved into event list
+10: start of 10: P0 IO burst complete  - Move into readyQ - CPU burst of 8
+10: start of 10: P4 Arrives - new process - enters readyQ - CPU burst of 1
+10: P start of 10:  IO empty - move 2 from IO Queue into IO - IO burst of 5
+10: end of 10: 1 CPU burst complete - Moved into event list
+
+CPU: P1		IO: P2		ReadyQ: P3		IOQueue: empty
+
+11: start of 11: P1 Terminated - No more bursts remain
+11:  start of 11:  CPU empty - move P3 from readyQ into CPU - CPU burst of 8
+12: No event
+12: end of 12: 3 CPU burst complete - Moved into event list
+13: start of 13: P3 Preempted from CPU - moved into readyQ - CPU burst of 6
+13: start of 13: P5 Arrives - new process - enters readyQ - CPU burst of 1
+13:  start of 13:  CPU empty - move P0 from readyQ into CPU - CPU burst of 8
+14: No event
+14: end of 14: 0 CPU burst complete - Moved into event list
+14: end of 14: 2 IO burst complete - Moved into event list
+15: start of 15: P0 Preempted from CPU - moved into readyQ - CPU burst of 6
+15: start of 15: P2 IO burst complete  - Move into readyQ - CPU burst of 2
+15:  start of 15:  CPU empty - move P4 from readyQ into CPU - CPU burst of 1
+15: end of 15: 4 CPU burst complete - Moved into event list
+
+CPU: P4		IO: empty		ReadyQ: P3		IOQueue: empty
+
+16: start of 16: P4 CPU burst complete - moved into IO Queue (Blocked) - IO Bursts of 10
+16:  start of 16:  CPU empty - move P3 from readyQ into CPU - CPU burst of 6
+16: P start of 16:  IO empty - move 4 from IO Queue into IO - IO burst of 10
+17: No event
+17: end of 17: 3 CPU burst complete - Moved into event list
+18: start of 18: P3 Preempted from CPU - moved into readyQ - CPU burst of 4
+18:  start of 18:  CPU empty - move P5 from readyQ into CPU - CPU burst of 1
+18: end of 18: 5 CPU burst complete - Moved into event list
+19: start of 19: P5 CPU burst complete - moved into IO Queue (Blocked) - IO Bursts of 15
+19:  start of 19:  CPU empty - move P0 from readyQ into CPU - CPU burst of 6
+20: No event
+20: end of 20: 0 CPU burst complete - Moved into event list
+
+CPU: P0		IO: P4		ReadyQ: P2		IOQueue: P5
+
+21: start of 21: P0 Preempted from CPU - moved into readyQ - CPU burst of 4
+21:  start of 21:  CPU empty - move P2 from readyQ into CPU - CPU burst of 2
+22: No event
+22: end of 22: 2 CPU burst complete - Moved into event list
+23: start of 23: P2 CPU burst complete - moved into IO Queue (Blocked) - IO Bursts of 7
+23:  start of 23:  CPU empty - move P3 from readyQ into CPU - CPU burst of 4
+24: No event
+24: end of 24: 3 CPU burst complete - Moved into event list
+25: start of 25: P3 Preempted from CPU - moved into readyQ - CPU burst of 2
+25:  start of 25:  CPU empty - move P0 from readyQ into CPU - CPU burst of 4
+25: end of 25: 4 IO burst complete - Moved into event list
+
+CPU: P0		IO: P4		ReadyQ: P3		IOQueue: P5
+
+26: start of 26: P4 IO burst complete  - Move into readyQ - CPU burst of 2
+26: P start of 26:  IO empty - move 5 from IO Queue into IO - IO burst of 15
+26: end of 26: 0 CPU burst complete - Moved into event list
+27: start of 27: P0 Preempted from CPU - moved into readyQ - CPU burst of 2
+27:  start of 27:  CPU empty - move P3 from readyQ into CPU - CPU burst of 2
+28: No event
+28: end of 28: 3 CPU burst complete - Moved into event list
+29: start of 29: P3 CPU burst complete - moved into IO Queue (Blocked) - IO Bursts of 2
+29:  start of 29:  CPU empty - move P4 from readyQ into CPU - CPU burst of 2
+30: No event
+30: end of 30: 4 CPU burst complete - Moved into event list
+
+CPU: P4		IO: P5		ReadyQ: P0		IOQueue: P2
+
+31: start of 31: P4 Terminated - No more bursts remain
+31:  start of 31:  CPU empty - move P0 from readyQ into CPU - CPU burst of 2
+32: No event
+32: end of 32: 0 CPU burst complete - Moved into event list
+33: start of 33: P0 CPU burst complete - moved into IO Queue (Blocked) - IO Bursts of 7
+34: No event
+35: No event
+
+CPU: empty		IO: P5		ReadyQ: empty		IOQueue: P2
+
+36: No event
+37: No event
+38: No event
+39: No event
+40: No event
+40: end of 40: 5 IO burst complete - Moved into event list
+
+CPU: empty		IO: P5		ReadyQ: empty		IOQueue: P2
+
+41: start of 41: P5 IO burst complete  - Move into readyQ - CPU burst of 1
+41:  start of 41:  CPU empty - move P5 from readyQ into CPU - CPU burst of 1
+41: P start of 41:  IO empty - move 2 from IO Queue into IO - IO burst of 7
+41: end of 41: 5 CPU burst complete - Moved into event list
+42: start of 42: P5 CPU burst complete - moved into IO Queue (Blocked) - IO Bursts of 12
+43: No event
+44: No event
+45: No event
+
+CPU: empty		IO: P2		ReadyQ: empty		IOQueue: P3
+
+46: No event
+47: No event
+47: end of 47: 2 IO burst complete - Moved into event list
+48: start of 48: P2 IO burst complete  - Move into readyQ - CPU burst of 4
+48:  start of 48:  CPU empty - move P2 from readyQ into CPU - CPU burst of 4
+48: P start of 48:  IO empty - move 3 from IO Queue into IO - IO burst of 2
+49: No event
+49: end of 49: 2 CPU burst complete - Moved into event list
+49: end of 49: 3 IO burst complete - Moved into event list
+50: start of 50: P2 Preempted from CPU - moved into readyQ - CPU burst of 2
+50: start of 50: P3 IO burst complete  - Move into readyQ - CPU burst of 10
+50:  start of 50:  CPU empty - move P2 from readyQ into CPU - CPU burst of 2
+50: P start of 50:  IO empty - move 0 from IO Queue into IO - IO burst of 7
+
+CPU: P2		IO: P0		ReadyQ: P3		IOQueue: P5
+
+51: No event
+51: end of 51: 2 CPU burst complete - Moved into event list
+52: start of 52: P2 Terminated - No more bursts remain
+52:  start of 52:  CPU empty - move P3 from readyQ into CPU - CPU burst of 10
+53: No event
+53: end of 53: 3 CPU burst complete - Moved into event list
+54: start of 54: P3 Preempted from CPU - moved into readyQ - CPU burst of 8
+54:  start of 54:  CPU empty - move P3 from readyQ into CPU - CPU burst of 8
+55: No event
+55: end of 55: 3 CPU burst complete - Moved into event list
+
+CPU: P3		IO: P0		ReadyQ: empty		IOQueue: P5
+
+56: start of 56: P3 Preempted from CPU - moved into readyQ - CPU burst of 6
+56:  start of 56:  CPU empty - move P3 from readyQ into CPU - CPU burst of 6
+56: end of 56: 0 IO burst complete - Moved into event list
+57: start of 57: P0 IO burst complete  - Move into readyQ - CPU burst of 4
+57: P start of 57:  IO empty - move 5 from IO Queue into IO - IO burst of 12
+57: end of 57: 3 CPU burst complete - Moved into event list
+58: start of 58: P3 Preempted from CPU - moved into readyQ - CPU burst of 4
+58:  start of 58:  CPU empty - move P0 from readyQ into CPU - CPU burst of 4
+59: No event
+59: end of 59: 0 CPU burst complete - Moved into event list
+60: start of 60: P0 Preempted from CPU - moved into readyQ - CPU burst of 2
+60:  start of 60:  CPU empty - move P3 from readyQ into CPU - CPU burst of 4
+
+CPU: P3		IO: P5		ReadyQ: P0		IOQueue: empty
+
+61: No event
+61: end of 61: 3 CPU burst complete - Moved into event list
+62: start of 62: P3 Preempted from CPU - moved into readyQ - CPU burst of 2
+62:  start of 62:  CPU empty - move P0 from readyQ into CPU - CPU burst of 2
+63: No event
+63: end of 63: 0 CPU burst complete - Moved into event list
+64: start of 64: P0 Terminated - No more bursts remain
+64:  start of 64:  CPU empty - move P3 from readyQ into CPU - CPU burst of 2
+65: No event
+65: end of 65: 3 CPU burst complete - Moved into event list
+
+CPU: P3		IO: P5		ReadyQ: empty		IOQueue: empty
+
+66: start of 66: P3 CPU burst complete - moved into IO Queue (Blocked) - IO Bursts of 2
+67: No event
+68: No event
+68: end of 68: 5 IO burst complete - Moved into event list
+69: start of 69: P5 IO burst complete  - Move into readyQ - CPU burst of 4
+69:  start of 69:  CPU empty - move P5 from readyQ into CPU - CPU burst of 4
+69: P start of 69:  IO empty - move 3 from IO Queue into IO - IO burst of 2
+70: No event
+70: end of 70: 5 CPU burst complete - Moved into event list
+70: end of 70: 3 IO burst complete - Moved into event list
+
+CPU: P5		IO: P3		ReadyQ: empty		IOQueue: empty
+
+71: start of 71: P3 IO burst complete  - Move into readyQ - CPU burst of 7
+71: start of 71: P5 Preempted from CPU - moved into readyQ - CPU burst of 2
+71:  start of 71:  CPU empty - move P3 from readyQ into CPU - CPU burst of 7
+72: No event
+72: end of 72: 3 CPU burst complete - Moved into event list
+73: start of 73: P3 Preempted from CPU - moved into readyQ - CPU burst of 5
+73:  start of 73:  CPU empty - move P5 from readyQ into CPU - CPU burst of 2
+74: No event
+74: end of 74: 5 CPU burst complete - Moved into event list
+75: start of 75: P5 CPU burst complete - moved into IO Queue (Blocked) - IO Bursts of 8
+75:  start of 75:  CPU empty - move P3 from readyQ into CPU - CPU burst of 5
+75: P start of 75:  IO empty - move 5 from IO Queue into IO - IO burst of 8
+
+CPU: P3		IO: P5		ReadyQ: empty		IOQueue: empty
+
+76: No event
+76: end of 76: 3 CPU burst complete - Moved into event list
+77: start of 77: P3 Preempted from CPU - moved into readyQ - CPU burst of 3
+77:  start of 77:  CPU empty - move P3 from readyQ into CPU - CPU burst of 3
+78: No event
+78: end of 78: 3 CPU burst complete - Moved into event list
+79: start of 79: P3 Preempted from CPU - moved into readyQ - CPU burst of 1
+79:  start of 79:  CPU empty - move P3 from readyQ into CPU - CPU burst of 1
+79: end of 79: 3 CPU burst complete - Moved into event list
+80: start of 80: P3 CPU burst complete - moved into IO Queue (Blocked) - IO Bursts of 5
+
+CPU: empty		IO: P5		ReadyQ: empty		IOQueue: P3
+
+81: No event
+82: No event
+82: end of 82: 5 IO burst complete - Moved into event list
+83: start of 83: P5 IO burst complete  - Move into readyQ - CPU burst of 6
+83:  start of 83:  CPU empty - move P5 from readyQ into CPU - CPU burst of 6
+83: P start of 83:  IO empty - move 3 from IO Queue into IO - IO burst of 5
+84: No event
+84: end of 84: 5 CPU burst complete - Moved into event list
+85: start of 85: P5 Preempted from CPU - moved into readyQ - CPU burst of 4
+85:  start of 85:  CPU empty - move P5 from readyQ into CPU - CPU burst of 4
+
+CPU: P5		IO: P3		ReadyQ: empty		IOQueue: empty
+
+86: No event
+86: end of 86: 5 CPU burst complete - Moved into event list
+87: start of 87: P5 Preempted from CPU - moved into readyQ - CPU burst of 2
+87:  start of 87:  CPU empty - move P5 from readyQ into CPU - CPU burst of 2
+87: end of 87: 3 IO burst complete - Moved into event list
+88: start of 88: P3 IO burst complete  - Move into readyQ - CPU burst of 6
+88: end of 88: 5 CPU burst complete - Moved into event list
+89: start of 89: P5 Terminated - No more bursts remain
+89:  start of 89:  CPU empty - move P3 from readyQ into CPU - CPU burst of 6
+90: No event
+90: end of 90: 3 CPU burst complete - Moved into event list
+
+CPU: P3		IO: empty		ReadyQ: empty		IOQueue: empty
+
+91: start of 91: P3 Preempted from CPU - moved into readyQ - CPU burst of 4
+91:  start of 91:  CPU empty - move P3 from readyQ into CPU - CPU burst of 4
+92: No event
+92: end of 92: 3 CPU burst complete - Moved into event list
+93: start of 93: P3 Preempted from CPU - moved into readyQ - CPU burst of 2
+93:  start of 93:  CPU empty - move P3 from readyQ into CPU - CPU burst of 2
+94: No event
+94: end of 94: 3 CPU burst complete - Moved into event list
+95: start of 95: P3 Terminated - No more bursts remain
+
+CPU: empty		IO: empty		ReadyQ: empty		IOQueue: empty
+

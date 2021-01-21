@@ -1,0 +1,98 @@
+3: P0 Arrives - new process changes state to Ready3: P0 changes state from Ready to Running
+4: P1 Arrives - new process changes state to Ready5: P0 CPU changes state from Running to Blocked
+5: P1 changes state from Ready to Running
+5: P0 changes state from Ready to Blocked
+6: P2 Arrives - new process changes state to Ready7: P1 preempted - changes state from Running to Ready
+7: P2 changes state from Ready to Running
+8: P3 Arrives - new process changes state to Ready9: P2 CPU changes state from Running to Blocked
+9: P1 changes state from Ready to Running
+10: P0 changes state from Blocked to Ready
+10: P4 Arrives - new process changes state to Ready10: P2 changes state from Ready to Blocked
+11: P1 change state from Running to Terminate
+11: P3 changes state from Ready to Running
+13: P3 preempted - changes state from Running to Ready
+13: P5 Arrives - new process changes state to Ready13: P0 changes state from Ready to Running
+15: P0 preempted - changes state from Running to Ready
+15: P2 changes state from Blocked to Ready
+15: P4 changes state from Ready to Running
+16: P4 CPU changes state from Running to Blocked
+16: P3 changes state from Ready to Running
+16: P4 changes state from Ready to Blocked
+18: P3 preempted - changes state from Running to Ready
+18: P5 changes state from Ready to Running
+19: P5 CPU changes state from Running to Blocked
+19: P0 changes state from Ready to Running
+21: P0 preempted - changes state from Running to Ready
+21: P2 changes state from Ready to Running
+23: P2 CPU changes state from Running to Blocked
+23: P3 changes state from Ready to Running
+25: P3 preempted - changes state from Running to Ready
+25: P0 changes state from Ready to Running
+26: P4 changes state from Blocked to Ready
+26: P5 changes state from Ready to Blocked
+27: P0 preempted - changes state from Running to Ready
+27: P3 changes state from Ready to Running
+29: P3 CPU changes state from Running to Blocked
+29: P4 changes state from Ready to Running
+31: P4 change state from Running to Terminate
+31: P0 changes state from Ready to Running
+33: P0 CPU changes state from Running to Blocked
+41: P5 changes state from Blocked to Ready
+41: P5 changes state from Ready to Running
+41: P2 changes state from Ready to Blocked
+42: P5 CPU changes state from Running to Blocked
+48: P2 changes state from Blocked to Ready
+48: P2 changes state from Ready to Running
+48: P3 changes state from Ready to Blocked
+50: P2 preempted - changes state from Running to Ready
+50: P3 changes state from Blocked to Ready
+50: P2 changes state from Ready to Running
+50: P0 changes state from Ready to Blocked
+52: P2 change state from Running to Terminate
+52: P3 changes state from Ready to Running
+54: P3 preempted - changes state from Running to Ready
+54: P3 changes state from Ready to Running
+56: P3 preempted - changes state from Running to Ready
+56: P3 changes state from Ready to Running
+57: P0 changes state from Blocked to Ready
+57: P5 changes state from Ready to Blocked
+58: P3 preempted - changes state from Running to Ready
+58: P0 changes state from Ready to Running
+60: P0 preempted - changes state from Running to Ready
+60: P3 changes state from Ready to Running
+62: P3 preempted - changes state from Running to Ready
+62: P0 changes state from Ready to Running
+64: P0 change state from Running to Terminate
+64: P3 changes state from Ready to Running
+66: P3 CPU changes state from Running to Blocked
+69: P5 changes state from Blocked to Ready
+69: P5 changes state from Ready to Running
+69: P3 changes state from Ready to Blocked
+71: P3 changes state from Blocked to Ready
+71: P5 preempted - changes state from Running to Ready
+71: P3 changes state from Ready to Running
+73: P3 preempted - changes state from Running to Ready
+73: P5 changes state from Ready to Running
+75: P5 CPU changes state from Running to Blocked
+75: P3 changes state from Ready to Running
+75: P5 changes state from Ready to Blocked
+77: P3 preempted - changes state from Running to Ready
+77: P3 changes state from Ready to Running
+79: P3 preempted - changes state from Running to Ready
+79: P3 changes state from Ready to Running
+80: P3 CPU changes state from Running to Blocked
+83: P5 changes state from Blocked to Ready
+83: P5 changes state from Ready to Running
+83: P3 changes state from Ready to Blocked
+85: P5 preempted - changes state from Running to Ready
+85: P5 changes state from Ready to Running
+87: P5 preempted - changes state from Running to Ready
+87: P5 changes state from Ready to Running
+88: P3 changes state from Blocked to Ready
+89: P5 change state from Running to Terminate
+89: P3 changes state from Ready to Running
+91: P3 preempted - changes state from Running to Ready
+91: P3 changes state from Ready to Running
+93: P3 preempted - changes state from Running to Ready
+93: P3 changes state from Ready to Running
+95: P3 change state from Running to Terminate

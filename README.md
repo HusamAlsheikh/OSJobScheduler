@@ -1,5 +1,5 @@
 # OSJobScheduler
-OS Job Scheduler for CIS 450. Program simulates Round Robin Scheduling on a single-CPU system.
+OS Job Scheduler for Operating Systems Class. Program simulates Round Robin Scheduling on a single-CPU system.
 
 ## Overview:
 This programming assignment is designed primarily to improve your understanding of a typical process scheduling algorithm. It also incoporates skills and knowledge that you have earned in previous classes, in particular, CIS200 Computer Science II and CIS350/3501 Data Structures.  
